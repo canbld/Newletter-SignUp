@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(assets/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card.invisible{
+    display: none;
+}
+.success-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    display: none;
+}
+.success-page.visible{
+    display: block;
+}
+.success-card{
+    background-color: hsl(0, 0%, 100%);
+    max-width: 500px;
+    width: 100%;
+    border-radius: 2rem;
+    padding: 3.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.success-card-text{
+    font-family: 'Roboto-Regular', sans-serif;
+    color: hsl(234, 29%, 20%);
+    line-height: 1.5rem;
+}
+.head{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.head p{
+    line-height: 1.5rem;
+}
+.card-left-side{
+    padding: 1rem;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1 {
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 3.5rem;
+}
+p,label{
+    font-family: 'Roboto-Regular', sans-serif;
+}
+.head, label,p{
+    color: hsl(234, 29%, 20%);
+}
+.svg-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+label{
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+.email{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    opacity: 0.5;
+}
+.email:focus{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+.svg{
+    display: flex;
+    min-width: 19rem;
+}
+.svg p{
+    margin-left: 1rem;
+}
+.btn,.success-card-button{
+    padding: 1rem;
+    font-family: 'Roboto-Bold';
+    border-radius: 0.5rem;
+    color: white;
+    background-color: hsl(234, 29%, 20%);
+    border: 2px solid white;
+}
+.btn:hover,.success-card-button:hover{
+    cursor: pointer;
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 2px 5px 25px rgba(255, 100, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+}
+.errorMessage{
+    color: hsl(4, 100%, 67%);
+    font-family: 'Roboto-Bold';
+    font-size: 0.8rem;
+    margin-left: 12rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+}
+.errorMessage.visible{
+    opacity: 1;
+}
+.email-input-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email.visible{
+    background-color: hsl(4, 80%, 84%);
+}
+.email.visible:invalid{
+    color: red;
+}
+.mobile-img{
+    display: none;
+}
+.success-card-context{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: hsl(0, 0%, 100%);
+    }
+    .mobile-img{
+        display: block;
+        min-width: 100%;
+    }
+    .desktop-img{
+        display: none;
+    }
+    .card{
+        flex-direction: column;
+        padding: 0rem;
+    }
+    .card-left-side{
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    .errorMessage{
+        margin-left: 4rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+    .success-card{
+        padding: 1rem;
+        min-height: 100vh;
+        gap: 10rem;
+
+    }
+    .success-card-text{
+        font-size: 0.9rem;
+    }
+    
+}

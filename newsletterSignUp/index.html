@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/png">
+</head>
+<body>
+    <section class="container">
+        
+        <div class="card" id="card">
+            <img class="mobile-img" src="assets/images/illustration-sign-up-mobile.svg" alt="">
+            <div class="card-left-side">
+
+                <div class="head">
+                    <h1>Stay updated!</h1>
+                    <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                </div>
+                
+                <div class="svg-container">
+                    <div class="svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+                        <p>Product discovery and building what matters</p> 
+                    </div>
+                    <div class="svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+                        <p>Measuring to ensure updates  are a success</p>
+                    </div>
+                    <div class="svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+                        <p>And much more!</p>
+                    </div>
+                </div>
+
+                <form id="form">
+                    <div class="email-input-head">
+                        <label for="email">Email address</label>
+                        <p id="errorMessage" class="errorMessage">Valid email required</p>
+                    </div>
+                    <input type="email" id="email" class="email" name="email" placeholder="email@company.com" required>
+                    <button type="submit" id="submit" class="btn" >Subscribe to monthly newsletter</button>
+                </form>
+            </div>
+
+            <div class="card-right-side">
+                <img class="desktop-img" src="assets/images/illustration-sign-up-desktop.svg" alt="">
+            </div>
+            
+        </div>
+
+        <div class="success-page" id="success-page">
+            <div class="success-card">
+                
+                <div class="success-card-context">
+                    <div class="success-card-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FF6A3A"/><stop offset="100%" stop-color="#FF527B"/></linearGradient></defs><g fill="none"><circle cx="32" cy="32" r="32" fill="url(#a)"/><path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"/></g></svg>
+                    </div>
+                    <h1 class="success-card-head">Thanks for subscribing!</h1>
+                    <p class="success-card-text" id="success-card-text">A conformation email has been sent to .... Please open it and click
+                        the button inside to confirm your subscription.
+                    </p>
+                </div>
+                    <button class="success-card-button" id="success-card-button">
+                        Dismiss message
+                    </button>
+            </div>
+        </div>
+    </section>
+    
+
+<script src="index.js"></script>
+    
+</body>
+</html>
